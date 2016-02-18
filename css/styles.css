@@ -1,3 +1,65 @@
+/* Global settings */
+html, body{
+    height: 100%;
+}
+
 body {
-    color: #000;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+}
+
+/* Header */
+header {
+    background: url(../images/header-bg-image.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 900px;
+}
+
+.header-content {
+    max-width: 680px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 135px;
+}
+
+.header-content .header-logo {
+    border-radius: 10%;
+}
+
+.header-content h1, .header-content h2 {
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.header-content h1 {
+    font-size: 5.625em;
+    margin-top: 60px;
+}
+
+.header-content h2 {
+    font-size: 2.063em;
+    margin-top: 30px;
+}
+
+.header-content .scroll-down {
+    margin-top: 230px;
+}
+
+/* Navbar */
+.navbar-content {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.navbar-content li a {
+    font-size: 0.938em;
+    font-weight: 900;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #2c3e50;
 }
