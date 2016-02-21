@@ -6,6 +6,7 @@ html, body{
 body {
     font-family: 'Raleway', sans-serif;
     font-size: 16px;
+    color: #7e878f;
 }
 
 h1, h2, h3 {
@@ -13,12 +14,7 @@ h1, h2, h3 {
     font-weight: 800;
 }
 
-p {
-    color: #7e878f;
-}
-
 address {
-    color: #7e878f;
     margin-bottom: 10px;
 }
 
@@ -169,8 +165,11 @@ header {
 
 #about h3 {
     font-size: 1.250em;
-    color: #7e878f;
     margin-top: 0;
+}
+
+#about h4 {
+    font-size: 1em;
 }
 
 #about img {
@@ -197,5 +196,14 @@ header {
 
 .hobby {
     background-color: #f1f1f1;
-    color: #7e878f;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.hobbies-box .hobby:not(:first-child) {
+    border-left: 2px solid #fff;
+}
+
+.hobbies-box .row {
+    border-bottom: 2px solid #fff;
 }
