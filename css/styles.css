@@ -206,4 +206,10 @@ header {
 
 .hobbies-box .row {
     border-bottom: 2px solid #fff;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.hobbies-box .row:not(:last-child) {
+    margin-top: 25px;
 }
