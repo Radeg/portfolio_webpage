@@ -13,7 +13,7 @@
     <!-- style sheets -->
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="css/styles.css" />
-    <link rel="stylesheet" type="text/css" href="css/animate.css" />
+    <link rel="stylesheet" type="text/css" href="css/timeline.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800">
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900">
@@ -31,13 +31,14 @@
             <div class="col-lg-12">
                 <div class="header-content">
                     <img class="header-logo" src="images/header-logo.jpg" alt="logo" />
-                    <h1 class="animated pulse">Radek Benes</h1>
-                    <h2 class="animated slideInLeft">Front-end developer + Webdesigner</h2>
+                    <h1>Radek Benes</h1>
+                    <h2>Front-end developer + Webdesigner</h2>
                     <img class="scroll-down" src="images/scroll-down.png" alt="scroll-down" />
                 </div>
             </div>
         </div>
-    </header> <!-- /header -->
+    </header>
+    <!-- /header -->
     <nav class="navbar navbar-default">
         <div class="navbar-content container-fluid">
             <div class="navbar-header">
@@ -53,15 +54,18 @@
                 <ul class="nav navbar-nav">
                     <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
                     <li><a href="#about">About</a></li>
-                    <li><a href="#">Resume</a></li>
+                    <li><a href="#resume">Resume</a></li>
                     <li><a href="#">Skills</a></li>
                     <li><a href="#">My works</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
-            </div> <!-- /.navbar-collapse -->
-        </div> <!-- /.container-fluid -->
-    </nav> <!-- /nav -->
-    <section id="about" class="row-fluid">
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+    <!-- /nav -->
+    <section id="about" class="container-fluid">
         <div class="row">
             <div class="col-lg-12">
                 <h2>About me</h2>
@@ -85,38 +89,100 @@
                 <a href="docs/cv_en_updated.pdf" target="_blank" title="Download CV" role="button" class="btn btn-primary btn-lg"><i class="fa fa-download fa-2x"></i>Download cv</a>
             </div>
             <div class="col-lg-4 hobbies-box">
-                <h3>Hobbies &amp; interests</h3>
+                <h4>Hobbies &amp; interests</h4>
                 <div class="row">
                     <div class="col-lg-4 hobby">
                         <i class="fa fa-television fa-3x"></i>
-                        <h4>Computers</h4>
+                        <h5>Computers</h5>
                     </div>
                     <div class="col-lg-4 hobby">
                         <i class="fa fa-gamepad fa-3x"></i>
-                        <h4>Games</h4>
+                        <h5>Games</h5>
                     </div>
                     <div class="col-lg-4 hobby">
                         <i class="fa fa-book fa-3x"></i>
-                        <h4>Books</h4>
+                        <h5>Books</h5>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-lg-4 hobby">
                         <i class="fa fa-music fa-3x"></i>
-                        <h4>Music</h4>
+                        <h5>Music</h5>
                     </div>
                     <div class="col-lg-4 hobby">
                         <i class="fa fa-video-camera fa-3x"></i>
-                        <h4>Movies</h4>
+                        <h5>Movies</h5>
                     </div>
                     <div class="col-lg-4 hobby">
                         <i class="fa fa-plane fa-3x"></i>
-                        <h4>Travel</h4>
+                        <h5>Travel</h5>
                     </div>
                 </div>
             </div>
         </div>
-    </section> <!-- /#about -->
+    </section>
+    <!-- /#about -->
+    <section id="resume" class="container-fluid">
+        <div class="row timeline-container">
+            <div class="col-lg-12">
+                <h2>Resume</h2>
+                <div class="divider"></div>
+                <div id="cd-timeline" class="cd-container">
+                    <div class="cd-timeline-block">
+                        <div class="cd-timeline-img cd-picture">
+                            <i class="fa fa-briefcase fa-2x"></i>
+                        </div>
+                        <div class="cd-timeline-content">
+                            <h3>Digital Specialist</h3>
+                            <span class="cd-company">Wunderman | 2012 - present</span>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut.</p>
+                        </div>
+                        <!-- /.cd-timeline-content -->
+                    </div>
+                    <!-- /.cd-timeline-block -->
+                    <div class="cd-timeline-block">
+                        <div class="cd-timeline-img cd-picture">
+                            <i class="fa fa-briefcase fa-2x"></i>
+                        </div>
+                        <div class="cd-timeline-content">
+                            <h3>Technical support specialist</h3>
+                            <span class="cd-company">Active24 | 2007 - 2012</span>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut.</p>
+                        </div>
+                        <!-- /.cd-timeline-content -->
+                    </div>
+                    <!-- /.cd-timeline-block -->
+                    <div class="cd-timeline-block">
+                        <div class="cd-timeline-img cd-picture">
+                            <i class="fa fa-graduation-cap fa-2x"></i>
+                        </div>
+                        <div class="cd-timeline-content">
+                            <h3>Charles University</h3>
+                            <span class="cd-company">1998 - 2003</span>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut.</p>
+                        </div>
+                        <!-- /.cd-timeline-content -->
+                    </div>
+                    <!-- /.cd-timeline-block -->
+                    <div class="cd-timeline-block">
+                        <div class="cd-timeline-img cd-picture">
+                            <i class="fa fa-graduation-cap fa-2x"></i>
+                        </div>
+                        <div class="cd-timeline-content">
+                            <h3>Gymnazium Dr. J. Pekare</h3>
+                            <span class="cd-company">1994 - 1998</span>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut.</p>
+                        </div>
+                        <!-- /.cd-timeline-content -->
+                    </div>
+                    <!-- /.cd-timeline-block -->
+                </div>
+                <!-- /.cd-container -->
+            </div>
+        </div>
+        <!-- /.timeline-container -->
+    </section>
+    <!-- /#resume -->
 
     <script>
         $(document).ready(function () {
@@ -133,9 +199,12 @@
             });
 
             //Sticky navigation
-            $(".navbar").sticky({topSpacing:0});
+            $(".navbar").sticky({
+                topSpacing: 0
+            });
         });
     </script>
 
 </body>
+
 </html>
