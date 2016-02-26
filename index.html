@@ -18,21 +18,16 @@
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800">
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900">
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Arizonia">
-
-    <!-- JavaScript -->
-    <script type="text/javascript" src="js/jquery-1.12.0.min.js"></script>
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/jquery.sticky.js"></script>
 </head>
 
-<body>
-    <header class="container-fluid" data-type="background" data-speed="30">
-        <div class="row">
+<body data-spy="scroll" data-target=".navbar">
+    <header id="home" class="container-fluid" data-type="background" data-speed="30">
+        <div class="row overlay">
             <div class="col-lg-12">
                 <div class="header-content">
                     <img class="header-logo" src="images/header-logo.jpg" alt="logo" />
-                    <h1>Radek Benes</h1>
-                    <h2>Front-end developer + Webdesigner</h2>
+                    <h1 class="animated fadeInDown">Radek Benes</h1>
+                    <h2 class="animated fadeInUp">Front-end developer + Webdesigner</h2>
                     <img class="scroll-down" src="images/scroll-down.png" alt="scroll-down" />
                 </div>
             </div>
@@ -52,12 +47,12 @@
             </div>
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
+                    <li class="active"><a href="#home">Home <span class="sr-only">(current)</span></a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#resume">Resume</a></li>
-                    <li><a href="#">Skills</a></li>
-                    <li><a href="#">My works</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#works">My works</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -183,28 +178,89 @@
         <!-- /.timeline-container -->
     </section>
     <!-- /#resume -->
+    <section id="stripe-banner" class="container-fluid" data-type="background" data-speed="30">
+        <div class="row overlay">
+            <div class="col-lg-12">
+                <div class="stripe-banner-content">
+                    <span>Keep in touch</span>
+                    <a href="https://cz.linkedin.com/in/radek-beneš-64bb3552" target="_blank" title="Linkedin" role="button" class="btn btn-primary btn-lg linkedin-btn"><i class="fa fa-linkedin fa-2x"></i>Linkedin</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /#stripe-banner -->
+    <section id="skills" class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12">
+                <h2>Skills</h2>
+                <div class="divider"></div>
+            </div>
+        </div>
+        <div class="row chart-container">
+            <div class="col-lg-3">
+                <div class="chart" data-percent="93">
+                    <p>93<sup>%</sup></p>
+                    <h3>HTML5/CSS3</h3>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="chart" data-percent="80">
+                    <p>80<sup>%</sup></p>
+                    <h3>jQuery</h3>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="chart" data-percent="72">
+                    <p>72<sup>%</sup></p>
+                    <h3>Sass</h3>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="chart" data-percent="68">
+                    <p>68<sup>%</sup></p>
+                    <h3>C#</h3>
+                </div>
+            </div>
+        </div> <!-- /.row -->
+        <div class="row chart-container">
+            <div class="col-lg-3">
+                <div class="chart" data-percent="93">
+                    <p>93<sup>%</sup></p>
+                    <h3>HTML5/CSS3</h3>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="chart" data-percent="80">
+                    <p>80<sup>%</sup></p>
+                    <h3>jQuery</h3>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="chart" data-percent="72">
+                    <p>72<sup>%</sup></p>
+                    <h3>Sass</h3>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="chart" data-percent="68">
+                    <p>68<sup>%</sup></p>
+                    <h3>C#</h3>
+                </div>
+            </div>
+        </div> <!-- /.row -->
+    </section>
+    <!-- /#skills -->
 
-    <script>
-        $(document).ready(function () {
-            //Parallax scrolling
-            $('header[data-type="background"]').each(function () {
-                var $bgobj = $(this);
-                $(window).scroll(function () {
-                    var yPos = -($(window).scrollTop() / $bgobj.data('speed'));
-                    var coords = '50% ' + yPos + 'px';
-                    $bgobj.css({
-                        backgroundPosition: coords
-                    });
-                });
-            });
-
-            //Sticky navigation
-            $(".navbar").sticky({
-                topSpacing: 0
-            });
-        });
-    </script>
-
+    <!-- JavaScript -->
+    <script type="text/javascript" src="js/jquery-1.12.0.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jquery.sticky.js"></script>
+    <script type="text/javascript" src="js/easypiechart.js"></script>
+    <script type="text/javascript" src="js/jquery.plugin.js"></script>
+    <script type="text/javascript" src="js/canvas.js"></script>
+    <script type="text/javascript" src="js/jquery.appear.min.js"></script>
+    <script type="text/javascript" src="js/smooth.scroll.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
 </body>
 
 </html>
