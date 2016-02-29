@@ -1,15 +1,10 @@
 $(document).ready(function () {
     //Parallax
-    $('header[data-type="background"]').each(function () {
-        var $bgobj = $(this);
-        $(window).scroll(function () {
-            var yPos = -($(window)).scrollTop()  / $bgobj.data('speed');
-            var coords = '50% ' + yPos + 'px';
-            $bgobj.css({
-                backgroundPosition: coords
-            });
-        });
-    });
+    parallaxInit();
+    function parallaxInit() {
+        $('header').parallax("30%", 0.1);
+        $('#stripe-banner').parallax("30%", 0.1);
+    }
 
     //Sticky navigation
     $(".navbar").sticky({

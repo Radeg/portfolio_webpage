@@ -47,6 +47,15 @@ address {
     height: 2px;
 }
 
+.parallax {
+    background-attachment: fixed !important;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    color: #FFFFFF;
+}
+
 .btn {
     text-transform: uppercase;
     background-color: #e74c3c;
@@ -82,21 +91,13 @@ address {
 
 /* Header */
 header {
-    background: url(../images/header-bg-image.jpg) 50% 0 repeat fixed;
-    min-height: 830px;
-    height: 830px;
-    margin: 0 auto;
-    width: 100%;
-    max-width: 1920px;
-    position: relative;
+    background-image: url(../images/header-bg-image.jpg);
 }
 
 .header-content {
-    height: 458px;
-    position: absolute;
     text-align: center;
-    top: 135px;
     width: 99.2%;
+    padding: 97px 0;
 }
 
 .header-content .header-logo {
@@ -338,21 +339,13 @@ header {
 
 /* Stripe-banner */
 #stripe-banner {
-    background: url(../images/stripe-banner.jpg) 50% 0 repeat fixed;
-    min-height: 350px;
-    height: 350px;
-    margin: 0 auto;
-    width: 100%;
-    max-width: 1920px;
-    position: relative;
+    background-image: url(../images/stripe-banner.jpg);
 }
 
 .stripe-banner-content {
-    position: absolute;
     width: 99.2%;
     text-align: center;
-    height: 170px;
-    top: 85px;
+    padding: 90px 0;
 }
 
 .stripe-banner-content span {
@@ -434,5 +427,11 @@ header {
 
 .skills-content{
     text-align: center;
+}
+
+/* Works */
+#works {
+    background-color: #f0f2f7;
+    margin-top: 50px;
 }
 
