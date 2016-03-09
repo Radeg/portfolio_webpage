@@ -73,7 +73,11 @@ var Boxgrid = (function() {
 				$close = $item.find( 'span.rb-close' ),
 				$overlay = $item.children( 'div.rb-overlay' );
 
-			$item.on( 'click', function() {
+			$(".desc-paragraph a.btn").click(function(e){
+              e.stopPropagation();
+            });
+
+            $item.on( 'click', function() {
 
 				if( $item.data( 'isExpanded' ) ) {
 					return false;
