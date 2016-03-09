@@ -124,80 +124,6 @@ header {
     margin-top: 180px;
 }
 
-/* Header title animation */
-.animated {
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-}
-
-@-webkit-keyframes fadeInDown {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(0, -100%, 0);
-    transform: translate3d(0, -100%, 0);
-  }
-
-  to {
-    opacity: 1;
-    -webkit-transform: none;
-    transform: none;
-  }
-}
-
-@keyframes fadeInDown {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(0, -100%, 0);
-    transform: translate3d(0, -100%, 0);
-  }
-
-  to {
-    opacity: 1;
-    -webkit-transform: none;
-    transform: none;
-  }
-}
-
-.fadeInDown {
-  -webkit-animation-name: fadeInDown;
-  animation-name: fadeInDown;
-}
-
-@-webkit-keyframes fadeInUp {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(0, 100%, 0);
-    transform: translate3d(0, 100%, 0);
-  }
-
-  to {
-    opacity: 1;
-    -webkit-transform: none;
-    transform: none;
-  }
-}
-
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(0, 100%, 0);
-    transform: translate3d(0, 100%, 0);
-  }
-
-  to {
-    opacity: 1;
-    -webkit-transform: none;
-    transform: none;
-  }
-}
-
-.fadeInUp {
-  -webkit-animation-name: fadeInUp;
-  animation-name: fadeInUp;
-}
-
 /* Navbar */
 .navbar {
     border: none;
@@ -440,20 +366,22 @@ header {
 .works-container {
     max-width: 1170px;
     margin: 0 auto;
-    margin-bottom: 40px;
+    margin-bottom: 10px;
 }
 
 .work-box {
-    width: 23%;
-    background-color: #e74c3c;
-    border-radius: 2%;
+    width: 33%;
     min-height: 250px;
-    margin-right: 2%;
     cursor: pointer;
 }
 
 #rb-grid li {
     list-style-type: none;
+}
+
+#rb-grid .col-lg-4 {
+    padding-left: 0;
+    padding-right: 0;
 }
 
 .work-box:last-child {
@@ -463,7 +391,7 @@ header {
 .rb-overlay {
 	opacity: 0;
 	position: fixed;
-    background-color: beige;
+    background-color: #fff;
 	top: 0;
 	left: 0;
 	width: 100%;
@@ -500,5 +428,84 @@ header {
 	line-height: 0.6;
 	text-align: center;
 	text-indent: 0px;
+}
+
+.works-container figure {
+	position: relative;
+	float: left;
+	overflow: hidden;
+	max-width: 480px;
+	max-height: 360px;
+	background: #e74c3c;
+	text-align: center;
+	cursor: pointer;
+}
+
+.works-container figure img {
+	position: relative;
+	display: block;
+	min-height: 100%;
+	max-width: 100%;
+	opacity: 1;
+}
+
+.works-container figure figcaption {
+	padding: 2em;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 1.25em;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.works-container figure figcaption::before,
+.works-container figure figcaption::after {
+	pointer-events: none;
+}
+
+.works-container figure figcaption,
+.works-container figure figcaption > a {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.works-container figure figcaption > a {
+	z-index: 1000;
+	text-indent: 200%;
+	white-space: nowrap;
+	font-size: 0;
+	opacity: 0;
+}
+
+.works-container figure h2 {
+	word-spacing: -0.15em;
+	font-weight: 300;
+}
+
+.works-container figure h2 span {
+	font-weight: 800;
+}
+
+.works-container figure h2,
+.works-container figure p {
+	margin: 0;
+}
+
+.works-container figure p {
+	letter-spacing: 1px;
+	font-size: 68.5%;
+}
+
+/* Work description */
+#work-desc {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.carousel {
+    margin-top: 60px;
 }
 

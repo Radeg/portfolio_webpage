@@ -32,4 +32,7 @@ $(document).ready(function () {
         bounds: 200,
         reappear: true
     });
+
+    //Carousel
+    $('.carousel').carousel();
 });
