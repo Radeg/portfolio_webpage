@@ -47,6 +47,14 @@ address {
     height: 2px;
 }
 
+.divider-project {
+    background-color: #fff;
+    display: block;
+    margin: 40px auto;
+    width: 60px;
+    height: 2px;
+}
+
 .parallax {
     background-attachment: fixed !important;
     background-position: center center;
@@ -418,7 +426,8 @@ header {
 
 .rb-close::before {
 	content: 'x';
-	font-weight: 100;
+	font-weight: 500;
+    color: #f0f2f7;
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -499,22 +508,76 @@ header {
 	font-size: 68.5%;
 }
 
-/* Work description */
-#work-desc {
+/* Project */
+#project {
     max-width: 1170px;
     margin: 0 auto;
 }
 
-.carousel {
-    margin-top: 60px;
-}
-
-.desc-paragraph {
+.project-paragraph {
     margin-top: 130px;
 }
 
-.desc-paragraph .fa-link {
-    margin-right: 10px;
-    vertical-align: -2px;
+.project-bg {
+    background: url('../images/work-desc-bg.jpg') no-repeat;
+    background-size: cover;
 }
 
+.project-top {
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.project-top-content {
+    position: relative;
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+.project-top-content>.row {
+    margin-top: 50px;
+}
+
+.project-top-content h1 {
+    color: #e74c3c;
+    text-align: center;
+}
+
+.project-top-content p {
+    color: #f0f2f7;
+}
+
+.project-top-content ul li {
+    color: #f0f2f7;
+    padding: 20px 20px;
+    border-bottom: 1px solid #fff;
+    text-transform: uppercase;
+}
+
+.project-top-content ul li:first-child {
+    border-top: 1px solid #fff;
+}
+
+.project-top-content a.btn {
+    float: right;
+}
+
+.project-top-content .btn-lg {
+    padding: 7px 15px;
+}
+
+.project-bottom {
+    position: absolute;
+    width: 100%;
+    max-height: 40%;
+    background-color: #fff;
+    bottom: 0;
+}
+
+.project-bottom-content {
+    position: relative;
+    max-width: 1170px;
+    margin: 0 auto;
+    margin-top: 20px;
+}

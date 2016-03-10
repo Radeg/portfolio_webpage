@@ -73,7 +73,7 @@ var Boxgrid = (function() {
 				$close = $item.find( 'span.rb-close' ),
 				$overlay = $item.children( 'div.rb-overlay' );
 
-			$(".desc-paragraph a.btn").click(function(e){
+			$(".project-top-content a.btn").click(function(e){
               e.stopPropagation();
             });
 
@@ -97,6 +97,14 @@ var Boxgrid = (function() {
 					pointerEvents : 'auto'
 				} );
 
+                if(!bottomTweenOpen.reversed() || !topTweenOpen.reversed()) {
+                    bottomTweenOpen.resume();
+                    topTweenOpen.resume();
+                } else {
+                    bottomTweenOpen.restart(true);
+                    topTweenOpen.restart(true);
+                }
+
 				if( supportTransitions ) {
 					$overlay.on( transEndEventName, function() {
 
@@ -119,7 +127,10 @@ var Boxgrid = (function() {
 
 			$close.on( 'click', function() {
 
-				$body.css( 'overflow-y', 'auto' );
+                bottomTweenOpen.reverse();
+                topTweenOpen.reverse();
+
+                $body.css( 'overflow-y', 'auto' );
 
 				var layoutProp = getItemLayoutProp( $item ),
 					clipPropFirst = 'rect(' + layoutProp.top + 'px ' + ( layoutProp.left + layoutProp.width ) + 'px ' + ( layoutProp.top + layoutProp.height ) + 'px ' + layoutProp.left + 'px)',
