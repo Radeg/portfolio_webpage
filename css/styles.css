@@ -305,6 +305,7 @@ header {
 
 .fa-linkedin:before {
     margin-right: 10px;
+    vertical-align: middle;
 }
 
 /* Skills */
@@ -369,6 +370,7 @@ header {
 #works {
     background-color: #f0f2f7;
     margin-top: 50px;
+    padding-bottom: 100px;
 }
 
 .works-container {
@@ -514,10 +516,6 @@ header {
     margin: 0 auto;
 }
 
-.project-paragraph {
-    margin-top: 130px;
-}
-
 .project-bg {
     background: url('../images/work-desc-bg.jpg') no-repeat;
     background-size: cover;
@@ -570,14 +568,91 @@ header {
 .project-bottom {
     position: absolute;
     width: 100%;
-    max-height: 40%;
+    height: 350px;
     background-color: #fff;
     bottom: 0;
+    transition: bottom 0.5s linear;
+}
+
+.project-bottom:hover {
+    bottom: 0 !important;
 }
 
 .project-bottom-content {
     position: relative;
     max-width: 1170px;
     margin: 0 auto;
-    margin-top: 20px;
+    margin-top: 15px;
 }
+
+/* Contact */
+#contact {
+    max-width: 1170px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+
+.contact-list ul {
+    list-style-type: none;
+    margin-top: 40px;
+}
+
+.contact-list p {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.contact-list a {
+    color: #7e878f;
+}
+
+.contact-list li i {
+    border-radius: 25px;
+    color: #fff;
+    height: 42px;
+    line-height: 20px;
+    margin-bottom: 10px;
+    padding: 10px;
+    text-align: center;
+    width: 42px;
+    background-color: #e74c3c;
+}
+
+.contact-list .fa-linkedin:before, .contact-list .fa-download:before {
+    margin-right: 0;
+}
+
+.contact-list .fa-phone:before, .contact-list .fa-map-marker:before {
+    vertical-align: middle;
+}
+
+a.download, a.download:hover {
+    color: #e74c3c;
+}
+
+/* Form */
+input, textarea {
+    display: block;
+    width: 100%;
+    border: 1px solid transparent;
+    border-radius: 2%;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+input {
+    margin-bottom: 20px;
+}
+
+form {
+    margin-top: 40px;
+}
+
+textarea {
+    resize: none;
+}
+
+.contact-form .btn-lg {
+    padding: 15px 25px;
+}
+
