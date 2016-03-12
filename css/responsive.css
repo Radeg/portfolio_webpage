@@ -1,0 +1,10 @@
+/* Media queries */
+@media (max-width: 767px) {
+    .container-fluid>.navbar-header {
+        margin-left: 0;
+    }
+    .navbar-header {
+        margin-right: 0 !important;
+    }
+}
+
