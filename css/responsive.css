@@ -1,4 +1,11 @@
 /* Media queries */
+@media (max-width: 991px) {
+    .hobbies-box {
+        text-align: center;
+        margin-top: 50px;
+    }
+}
+
 @media (max-width: 767px) {
     .container-fluid>.navbar-header {
         margin-left: 0;

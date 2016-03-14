@@ -229,6 +229,7 @@ header {
 .hobbies-box ul {
     padding: 0;
     margin-top: 25px;
+    display: inline-block;
 }
 
 .hobbies-box ul li {
