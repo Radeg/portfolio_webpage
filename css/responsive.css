@@ -4,6 +4,15 @@
         text-align: center;
         margin-top: 50px;
     }
+    .chart-container>div {
+        margin-top: 80px;
+    }
+    .chart-container {
+        margin-bottom: 0;
+    }
+    #skills .chart-container:last-child {
+        margin-bottom: 50px;
+    }
 }
 
 @media (max-width: 767px) {
@@ -12,6 +21,31 @@
     }
     .navbar-header {
         margin-right: 0 !important;
+    }
+    .address {
+        margin-top: 30px;
+        text-align: center;
+    }
+    #about img {
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 406px) {
+    .hobbies-box {
+        text-align: left;
+    }
+    .address {
+        text-align: left;
+    }
+    #about img {
+        margin: 0;
+    }
+}
+
+@media (max-width: 325px) {
+    .works-container figure figcaption p {
+        display: none;
     }
 }
 
