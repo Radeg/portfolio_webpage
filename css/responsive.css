@@ -1,4 +1,14 @@
 /* Media queries */
+@media (max-width: 1310px) {
+    .scroll-top {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        font-size: 1em;
+        opacity: 0.5;
+    }
+}
+
 @media (max-width: 991px) {
     .hobbies-box {
         text-align: center;
@@ -23,6 +33,21 @@
     .project-top-content {
         padding: 0 2%;
     }
+    .contact-list ul {
+        padding-left: 0;
+    }
+    .m-b-neg {
+        margin-bottom: -20px;
+    }
+}
+
+@media (max-width: 820px) {
+    body {
+        font-size: 14px;
+    }
+    h2 {
+        margin-top: 50px;
+    }
 }
 
 @media (max-width: 767px) {
@@ -44,11 +69,41 @@
     }
 }
 
-@media (max-width: 406px) {
-    .hobbies-box {
-        text-align: left;
+@media (max-width: 640px) and (orientation: landscape) {
+    .project-top-content h1 {
+        margin-top: 10px;
     }
-    .address {
+    .divider-project {
+        margin: 10px auto;
+    }
+    .project-top-content>.row {
+        margin-top: 0;
+    }
+    .rb-close::before {
+        top: -5px;
+    }
+    .project-top-content ul li {
+        padding: 10px 20px;
+    }
+    .footer-content p {
+        padding: 50px 0;
+    }
+}
+
+@media (max-width: 640px) {
+    .header-content {
+        padding: 50px 0;
+    }
+    .header-content .scroll-down {
+        margin-top: 50px;
+    }
+    .stripe-banner-content {
+        padding: 50px 0;
+    }
+}
+
+@media (max-width: 406px) {
+    .hobbies-box, .address {
         text-align: left;
     }
     #about img {
@@ -59,6 +114,17 @@
     }
     .project-top-content>.row {
         margin-top: 30px;
+    }
+    body {
+        font-size: 12px;
+    }
+    .cd-timeline-img .fa.fa-briefcase {
+        margin-left: 11px !important;
+        margin-top: 11px !important;
+    }
+    .cd-timeline-img .fa.fa-graduation-cap {
+        margin-top: 12px !important;
+        margin-left: 8px !important;
     }
 }
 

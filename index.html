@@ -71,13 +71,16 @@
 </head>
 
 <body data-spy="scroll" data-target=".navbar">
+    <!--<div id="loading">
+        <img class="loading-image" src="images/loader.gif" alt="loader" />
+    </div>-->
     <header id="home" class="container-fluid parallax" data-stellar-background-ratio="0.6" data-stellar-vertical-offset="20">
         <div class="row overlay">
             <div class="col-lg-12">
                 <div class="header-content">
                     <img class="header-logo" src="images/header-logo.jpg" alt="logo" />
                     <h1 class="animated fadeInDown">Radek Benes</h1>
-                    <h2 class="animated fadeInUp">Front-end developer + Webdesigner</h2>
+                    <h2 class="animated fadeInUp">Front-end developer</h2>
                     <img class="scroll-down" src="images/scroll-down.png" alt="scroll-down" />
                 </div>
             </div>
@@ -241,7 +244,7 @@
         <div class="row">
             <div class="col-lg-12">
                 <h2>Skills</h2>
-                <div class="divider"></div>
+                <div class="divider m-b-neg"></div>
             </div>
         </div>
         <div class="row chart-container">
@@ -674,7 +677,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-lg-6 contact-list">
+            <div class="col-lg-6 col-md-6 col-sm-6 contact-list">
                 <h3>Let's get in touch</h3>
                 <ul>
                     <li><i class="fa fa-envelope"></i>
@@ -694,9 +697,9 @@
                     </li>
                 </ul>
             </div>
-            <div class="col-lg-6 contact-form">
+            <div class="col-lg-6 col-md-6 col-sm-6 contact-form">
                 <h3>Drop me a line</h3>
-                <form class="form" id="form" method="post" action="contact.php">
+                <form class="form" id="form" method="post" action="">
                     <input type="text" name="name" placeholder="Name" required="">
                     <input type="text" name="email" placeholder="Email" required="">
                     <textarea name="message" placeholder="Message" rows="8"></textarea>
@@ -747,6 +750,11 @@
             delay: 1.5
         });
     </script>
+
+    <!-- Scroll top -->
+    <a class="scroll-top" href="#home" title="Scroll to top">
+        <i class="fa fa-chevron-up"></i>
+    </a>
 </body>
 
 </html>

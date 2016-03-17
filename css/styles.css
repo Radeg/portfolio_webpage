@@ -43,6 +43,25 @@ address a, address a:hover {
     color: #7e878f;
 }
 
+#loading {
+   width: 100%;
+   height: 100%;
+   top: 0px;
+   left: 0px;
+   position: fixed;
+   display: block;
+   background-color: #fff;
+   z-index: 9999;
+   text-align: center;
+}
+
+.loading-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 100;
+}
+
 .divider {
     background-color: #e74c3c;
     display: block;
@@ -65,7 +84,7 @@ address a, address a:hover {
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
-    color: #FFFFFF;
+    color: #fff;
 }
 
 .btn {
@@ -101,11 +120,36 @@ address a, address a:hover {
     height: 100%;
 }
 
+.scroll-top {
+    background: none repeat scroll 0 0 #2c3e50;
+    border-radius: 6px;
+    bottom: 30px;
+    color: #fff;
+    display: none;
+    font-size: 1.5em;
+    height: 60px;
+    line-height: 60px;
+    position: fixed;
+    right: 10px;
+    text-align: center;
+    width: 60px;
+    z-index: 103;
+    outline: none;
+}
+
+.scroll-top:hover {
+    background-color: #e74c3c;
+    color: #fff;
+}
+
+.fa-chevron-up {
+    margin-top: 10px;
+}
+
 /* Header */
 header {
     background-image: url(../images/header-bg-image.jpg);
     width: 100%;
-    /*height: 100%;*/
 }
 
 .header-content {
@@ -217,7 +261,7 @@ header {
 
 .fa-download:before {
     margin-right: 10px;
-    vertical-align: middle;
+    vertical-align: -3px;
 }
 
 .hobby {
@@ -311,7 +355,7 @@ header {
 
 .fa-linkedin:before {
     margin-right: 10px;
-    vertical-align: middle;
+    vertical-align: -2px;
 }
 
 /* Skills */
@@ -634,7 +678,7 @@ header {
 }
 
 .contact-list .fa-phone:before, .contact-list .fa-map-marker:before {
-    vertical-align: middle;
+    vertical-align: -3px;
 }
 
 a.download, a.download:hover {

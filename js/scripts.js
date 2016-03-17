@@ -7,9 +7,18 @@ $(window).resize(function () {
     ProjectBottomResize();
 })
 
+//Loader
+$(window).load(function() {
+	$('#loading').fadeOut(200);
+})
+
 $(document).ready(function () {
     //Parallax
-    parallaxInit();
+    var ismobile = /Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)
+
+    if (!ismobile) {
+        parallaxInit();
+    }
 
     function parallaxInit() {
         $('header').parallax("30%", 0.1);
@@ -45,10 +54,33 @@ $(document).ready(function () {
 
     //Carousel
     $('.carousel').carousel();
+
+    //Scroll to top
+    var scrollTimeout;
+
+    $('a.scroll-top').click(function () {
+        $('html,body').animate({
+            scrollTop: 0
+        }, 500);
+        return false;
+    });
+
+    $(window).scroll(function () {
+        clearTimeout(scrollTimeout);
+        if ($(window).scrollTop() > 400) {
+            scrollTimeout = setTimeout(function () {
+                $('a.scroll-top:hidden').fadeIn()
+            }, 100);
+        } else {
+            scrollTimeout = setTimeout(function () {
+                $('a.scroll-top:visible').fadeOut()
+            }, 100);
+        }
+    });
 });
 
 //Resize .project-bottom height
-function ProjectBottomResize () {
+function ProjectBottomResize() {
     var windowHeight = $(window).height();
     var itemHeight = $('.project-bottom').height();
     var ratio = itemHeight / windowHeight * 100
@@ -58,4 +90,3 @@ function ProjectBottomResize () {
         $('.project-bottom').css('bottom', -bottomShift + '%')
     }
 }
-
