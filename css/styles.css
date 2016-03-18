@@ -711,6 +711,10 @@ textarea {
     padding: 15px 25px;
 }
 
+.g-recaptcha {
+    margin-top: 20px;
+}
+
 /* Map */
 #map {
     height: 495px;
