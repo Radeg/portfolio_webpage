@@ -1,18 +1,16 @@
-<?php
-    $name = $_POST['name'];
-    $email = $_POST['email'];
-    $message = $_POST['message'];
-    $from = 'From: Portfolio page';
-    $to = 'radeg007@gmail.com';
-    $subject = 'Hello';
+<?
+$name = $_POST['name'];
+$subject = "Hello from " .$name;
+$email = $_POST['email'];
+$message = $_POST['message'];
 
-    $body = "From: $name\n E-Mail: $email\n Message:\n $message";
+if ($email!="" and $message!="" and $name!="")
+{
 
-    if ($_POST['submit'] && $human == '4') {
-        if (mail ($to, $subject, $body, $from)) {
-	    echo '<p>Your message has been sent!</p>';
-	} else {
-	    echo '<p>Something went wrong, go back and try again!</p>';
-	}
-    }
+$site_name = "radeg.cz";
+$header   = "From: ". $name . " <" . $email . ">\r\n";
+$header   .= 'Content-type: text/html; charset=utf-8' . "\r\n";
+
+mail("radeg007@gmail.com", $subject, $message, "From: " . $email, $site_name);
+}
 ?>

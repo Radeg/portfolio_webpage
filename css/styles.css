@@ -88,6 +88,8 @@ address a, address a:hover {
 }
 
 .btn {
+    color: #fff;
+    border: none;
     text-transform: uppercase;
     background-color: #e74c3c;
     font-size: 0.875em;
@@ -97,6 +99,10 @@ address a, address a:hover {
     -moz-transition: all 250ms linear;
     -o-transition: all 250ms linear;
     transition:         all 250ms linear;
+}
+
+.btn:hover {
+    color: #fff;
 }
 
 .btn-primary {
@@ -144,6 +150,15 @@ address a, address a:hover {
 
 .fa-chevron-up {
     margin-top: 10px;
+}
+
+.modal-body {
+    text-align: center;
+    padding-top: 90px;
+}
+
+.modal-footer {
+    border-top: none;
 }
 
 /* Header */

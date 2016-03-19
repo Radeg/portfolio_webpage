@@ -68,6 +68,18 @@
     </script>
     <!-- /Google maps section -->
     <script src='https://www.google.com/recaptcha/api.js'></script>
+
+    <script>
+        //reCaptcha required
+        window.onload = function() {
+            var recaptcha = document.forms["form"]["g-recaptcha-response"];
+            recaptcha.required = true;
+            recaptcha.oninvalid = function(e) {
+                //alert("Please complete the captcha");
+                $('#captcha').modal();
+            }
+        }
+    </script>
 </head>
 
 <body data-spy="scroll" data-target=".navbar">
@@ -702,11 +714,37 @@
                 <form class="form" id="form" method="post" action="">
                     <input type="text" name="name" placeholder="Name" required="">
                     <input type="text" name="email" placeholder="Email" required="">
-                    <textarea name="message" placeholder="Message" rows="8"></textarea>
+                    <textarea name="message" placeholder="Message" rows="8" required=""></textarea>
                     <div class="g-recaptcha" data-sitekey="6LesJhsTAAAAANgu-pWXor3NO1Nn14r26cvVab6L"></div>
                     <input type="submit" class="btn btn-primary btn-lg" id="submit" value="Send Message">
                 </form>
             </div>
+            <div id="success" class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <p>Your message has been sent!</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /#success -->
+            <div id="captcha" class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <p>Please complete the captcha</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /#captcha -->
         </div>
     </section>
     <!-- /#contact -->
@@ -749,6 +787,22 @@
             opacity: 0,
             paused: true,
             delay: 1.5
+        });
+    </script>
+
+    <script>
+        //Modal window after submit
+        $("#form").submit(function(e) {
+            e.preventDefault();
+            $.ajax({
+                type: 'POST',
+                data: $("#form").serialize(),
+                url: 'http://www.radeg.cz/php/mail_form.php',
+                complete: function(data) {
+                    $("#success").modal();
+                }
+            });
+            //return false;
         });
     </script>
 
