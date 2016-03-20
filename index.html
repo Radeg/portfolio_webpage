@@ -713,7 +713,7 @@
                 <h3>Drop me a line</h3>
                 <form class="form" id="form" method="post" action="">
                     <input type="text" name="name" placeholder="Name" required="">
-                    <input type="text" name="email" placeholder="Email" required="">
+                    <input type="email" name="email" placeholder="Email" required="" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$">
                     <textarea name="message" placeholder="Message" rows="8" required=""></textarea>
                     <div class="g-recaptcha" data-sitekey="6LesJhsTAAAAANgu-pWXor3NO1Nn14r26cvVab6L"></div>
                     <input type="submit" class="btn btn-primary btn-lg" id="submit" value="Send Message">
