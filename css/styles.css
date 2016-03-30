@@ -590,6 +590,36 @@ header {
     background-size: cover;
 }
 
+.project-bg01 {
+    background: url('../images/azure02_bg.jpg') no-repeat;
+    background-size: cover;
+}
+
+.project-bg02 {
+    background: url('../images/business-store01_bg.jpg') no-repeat;
+    background-size: cover;
+}
+
+.project-bg03 {
+    background: url('../images/isv02_bg.jpg') no-repeat;
+    background-size: cover;
+}
+
+.project-bg04 {
+    background: url('../images/pexeso01_bg.jpg') no-repeat;
+    background-size: cover;
+}
+
+.project-bg05 {
+    background: url('../images/thefour02_bg.jpg') no-repeat;
+    background-size: cover;
+}
+
+.project-bg06 {
+    background: url('../images/uddannelse01_bg.jpg') no-repeat;
+    background-size: cover;
+}
+
 .project-top {
     position: absolute;
     top: 0;
