@@ -121,6 +121,14 @@ address a, address a:hover {
     padding: 10px 25px;
 }
 
+.btn.google-play-icon {
+    background-color: transparent;
+}
+
+.btn.google-play-icon img {
+    width: 200px;
+}
+
 .overlay {
     background-color: rgba(0,0,0,0.75);
     height: 100%;
