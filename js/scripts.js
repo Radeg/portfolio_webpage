@@ -13,11 +13,10 @@ $(window).load(function() {
 })
 
 $(document).ready(function () {
-    //Collapse mobile navbar after click
     $(".navbar-nav li a").click(function(event) {
         $(".navbar-collapse").collapse('hide');
     });
-
+    
     //Parallax
     var ismobile = /Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)
 
